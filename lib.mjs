@@ -72,6 +72,7 @@ export function page({ shell, esc, data }) {
 <h2>Mitä luvut tarkoittavat</h2>
 <p>Luku on tokenien määrä kappaleina, ei dollareina. Esimerkiksi rahastotokenin yksikön arvo voi poiketa yhdestä dollarista. Haltijoiden määrä on tilien määrä, ei ihmisten.</p>
 <h2>Mistä tieto tulee</h2>
-<p class="note">Tokenin liikkeeseenlaskija haetaan liikkeeseenlaskijan omasta stellar.toml-tiedostosta. Määrä ja haltijat luetaan Stellarin julkisesta pääkirjasta (Horizon). Sivu on luettelo seurattavista tokeneista ja näyttää vain ne, jotka on tarkistettu. Tämä ei ole sijoitusneuvontaa eikä täydellinen luettelo.</p>`;
+<p class="note">Tokenin liikkeeseenlaskija haetaan liikkeeseenlaskijan omasta stellar.toml-tiedostosta. Määrä ja haltijat luetaan Stellarin julkisesta pääkirjasta (Horizon). Sivu on luettelo seurattavista tokeneista ja näyttää vain ne, jotka on tarkistettu. Tämä ei ole sijoitusneuvontaa eikä täydellinen luettelo.</p>
+<p class="note">Sivu ei ole yhteydessä mainittuihin yhtiöihin, eikä ne tue tai suosittele sitä. Sivu ei anna ostosuosituksia eikä arvioi tuottoa. Ei-kaupallinen prototyyppi: ei mainoksia eikä maksullista sisältöä.</p>`;
   return [{ path: "/", html: shell({ title: "Tokenisoitu omaisuus Stellarissa (prototyyppi)", desc: "Prototyyppi: tokenisoitujen rahastojen ja velkakirjojen määrä Stellar-ketjussa.", path: "/", body, head: '<meta name="robots" content="noindex">' }) }];
 }
