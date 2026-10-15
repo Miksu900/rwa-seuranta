@@ -19,6 +19,7 @@ export function parseToml(text) {
 }
 
 export async function resolveIssuers(t, log) {
+  if (t.issuer) return [t.issuer]; // liikkeeseenlaskijan omalta sivulta varmistettu osoite
   try {
     const r = await fetch(`https://${t.domain}/.well-known/stellar.toml`, { signal: to(20000) });
     if (!r.ok) throw new Error("HTTP " + r.status);
