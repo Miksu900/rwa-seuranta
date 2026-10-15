@@ -56,6 +56,7 @@ export function rwaPages({ shell, esc, data }) {
 <h2>Ketjuittain</h2>${chainRows}
 <h2>Seurattavat ketjut</h2><ul>${watch}</ul>
 <h2>Suurimmat protokollat</h2><div class="sw"><table class="rt"><thead><tr><th>Protokolla</th><th class="n">Arvo</th><th class="n">7 pv</th></tr></thead><tbody>${rows}</tbody></table></div>
-<p class="note">Lähde: <a href="https://defillama.com" rel="noopener">DeFiLlama</a>. TVL tarkoittaa protokolliin sidottua arvoa, ei suoraan tokenisoidun omaisuuden määrää, ja DeFiLlama luokittelee protokollat omalla tavallaan. Tämä ei ole sijoitusneuvontaa.</p>`;
+<p class="note">Lähde: <a href="https://defillama.com" rel="noopener">DeFiLlama</a>. TVL tarkoittaa protokolliin sidottua arvoa, ei suoraan tokenisoidun omaisuuden määrää, ja DeFiLlama luokittelee protokollat omalla tavallaan. Tämä ei ole sijoitusneuvontaa.</p>
+<p class="note"><b>Ei-kaupallinen prototyyppi.</b> DeFiLlaman käyttöehdot rajaavat datan käytön henkilökohtaiseen, ei-kaupalliseen käyttöön ilman kirjallista lupaa. Siksi sivulla ei ole mainoksia eikä maksullista sisältöä, ja se on piilotettu hakukoneilta.</p>`;
   return [{ path: "/", html: shell({ title: "Tokenisoitu omaisuus numeroina (prototyyppi)", desc: "Prototyyppi: tokenisoidun oikean maailman omaisuuden määrä ketjuittain.", path: "/", body, head: '<meta name="robots" content="noindex">' }) }];
 }
