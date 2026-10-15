@@ -1,6 +1,9 @@
 # rwa-seuranta
 
-Prototyyppi: tokenisoidun oikean maailman omaisuuden (RWA) määrä ketjuittain suomeksi.
-Data: [DeFiLlama](https://defillama.com). Sivu rakentuu uudelleen tunnin välein GitHub Actionsissa.
+Prototyyppi: tokenisoidun omaisuuden määrä Stellar-ketjussa suomeksi.
 
-Tilanne: prototyyppi, hakukoneilta piilotettu (noindex). DeFiLlaman käyttöehdot (defillama.com/terms, kohdat 7 ja 8) rajaavat datan henkilökohtaiseen, ei-kaupalliseen käyttöön ilman kirjallista lupaa. Ei mainoksia, ei maksullista sisältöä ja ei hakukonenäkyvyyttä, ennen kuin lupa on kysytty (tai data vaihdettu avoimeen lähteeseen).
+Data luetaan suoraan ketjusta (Stellar Horizon). Tokenin liikkeeseenlaskija haetaan liikkeeseenlaskijan omasta stellar.toml-tiedostosta (verkkotunnus on tiedostossa tokens.json). Kolmannen osapuolen koottua aineistoa (esim. DeFiLlama) ei käytetä, koska sen käyttöehdot rajaavat käytön ei-kaupalliseen.
+
+Sivu rakentuu tunnin välein GitHub Actionsissa. Hakukoneilta piilotettu (noindex), kunnes tokenilista ja luvut on tarkistettu.
+
+Seuraavaksi: XDC-ketjun tokenit (tarvitaan varmistetut sopimusosoitteet).
